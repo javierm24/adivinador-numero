@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript - Codigo adivina un numero entre 1 y 100</title>
+    <style>
+        .acertado {color:#f00; font-weight:bold;}
+        .fin {font-weight:bold}
+        .error {color:#ccc}
+    </style>
+    <script src="retofinaljav.js"></script>
+</head>
+<body>
+    <h1>Adivina un numero entre 1 y 100</h1>
+
+    <form onsubmit="return adivinar()">
+        Indica el numero de intentos posibles:
+        <input type="text" name="numeroRespuestas" id="numeroRespuestas">
+
+        <br> Indica un numero entre 1 y 100:
+        <input type="text" name="numero" id="numero" disabled>
+
+        <br><input type="submit" value="Adivinar" id="btnEnviar">
+    </form>
+
+    <div id="respuestas"></div>
+</body>
+</html>
